@@ -58,29 +58,17 @@ where source and destination are any valid unix path
 
 
 ## Submitting jobs
-1. (single core) Using `nano` or your favorite text editor, create a SLURM submission script to run the `fastQTL` example code. We'll give you some biolerplate work...
+1. (single core) Using `nano` or your favorite text editor, create a SLURM submission script to run the `test.py` example code. Use the `run_test.sh` script as a starting point.
 
-```bash
-source new-modules.sh
-module load gcc FastQTL
-cp -r $FASTQTL_HOME/example ./fastqtl_example
-cd fastqtl_example
-```
+2. Modify your script so that it includes the proper SBATCH directives, Lmod opt-in, module loads, and commands to run the test.py script.
 
-And execute `fastQTL` using the following parameters...
+3. Include a mail notification so that you know the script completed successfully.
 
-```bash
--V genotypes.vcf.gz
--B phenotypes.bed.gz 
--O file.results.gz 
--L file.log 
---include-covariates covariates.txt.gz 
---region 22:17517460-24322660
-```
+4. Forward the SUCCESS email to your TF, and paste in the contents of the run_test.sh file. (DO NOT send this script file through the mail system, as it might be stripped out as a potential virus by mailserver virus scan software).
 
-Also, include an email notification for END (at the least!) for yourself so that you know the status of your work.
+5. Bask in the joy that you've run your first cluster job!
 
-2. Once your job completes successfully, how much RAM did your job use? What command did you use? Go back and modify your job script to use the appropriate amount of RAM.
+6. Once your job completes successfully, how much RAM did your job use? What command did you use? Go back and modify your job script to use the appropriate amount of RAM.
 
-3. (multicore) `FastQTL` can be parallelized easily using one of its options to create a command list. This command list can be passed to the program GNU Parallel `parallel`. Create a new submission script to process the `FastQTL` command list under `parallel` using 4 CPUs/cores. Ensure that you use the correct options for SLURM and `parallel` to specify this core count and the command list.
+
 
