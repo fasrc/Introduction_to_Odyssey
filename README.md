@@ -19,5 +19,4 @@ Post-lecture exercise:
 4. Forward the SUCCESS email to your TF, and paste in the contents of the run_test.sh file. (DO NOT send this script file through the mail system, as it might be stripped out as a potential virus by mailserver virus scan software).
 5. Bask in the joy that you've run your first cluster job!
 
-
 Any questions, please contact your TF or the course instructor.
