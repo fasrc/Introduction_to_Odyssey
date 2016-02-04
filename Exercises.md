@@ -46,21 +46,19 @@ where source and destination are any valid unix path
 5. What modules do you have loaded now?
 6. Issue the `bowtie` command now. What's different?
 
-7. Load in the legacy modules
-8. Look for the versions of `bowtie` on the cluster again. What do you notice?
 
 9. (Bonus!) Use the text editor `nano` to modify your `.bashrc` to opt-in for the new modules
 
 
 ## Login/Interactive sessions
 1. Issue the appropriate command to get an interactive session w/ 4 GB RAM for 60 minutes
-2. Start a MATLAB command-line session. What commands do you need to issue to do this?
+2. Start an R command-line session. What commands do you need to issue to do this?
 
 
 ## Submitting jobs
-1. (single core) Using `nano` or your favorite text editor, create a SLURM submission script to run the `test.py` example code. Use the `run_test.sh` script as a starting point.
+1. (single core) Using `nano` or your favorite text editor, create a SLURM submission script to run the `test.R` example code. Use the `run_test.sh` script as a starting point.
 
-2. Modify your script so that it includes the proper SBATCH directives, Lmod opt-in, module loads, and commands to run the test.py script.
+2. Modify your script so that it includes the proper SBATCH directives, Lmod opt-in, module loads, and commands to run the `test.R` script.
 
 3. Include a mail notification so that you know the script completed successfully.
 
@@ -69,6 +67,4 @@ where source and destination are any valid unix path
 5. Bask in the joy that you've run your first cluster job!
 
 6. Once your job completes successfully, how much RAM did your job use? What command did you use? Go back and modify your job script to use the appropriate amount of RAM.
-
-
 
