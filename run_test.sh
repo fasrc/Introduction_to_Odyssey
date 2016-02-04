@@ -1,12 +1,14 @@
 #!/bin/bash
 #
-# add all other SBATCH directives here...
+# add all SBATCH directives here...
 #
 
-set -x
+
 
 # add additional commands needed for Lmod and module loads here
 
+
+# Some job status output
 host=`hostname`
 date=`date`
 echo "Job started at $date on node $host"
