@@ -10,9 +10,9 @@ Condensed version of Introduction to Odyssey seminar:
 
 4. Shell SLURM script at [run_test.sh](run_test.sh)
 
-5. Python code to run via SLURM script at [test.R](test.R)
+5. R code to run from SLURM script at [test.R](test.R). The file [functions.R](functions.R) is needed by `test.R`.
 
-Post-lecture exercise:
+Post-lecture exercise:<br />
 1. Download the run_test.sh and test.R scripts to your home folder<br />
 2. Modify the run_test.sh script so that it includes the proper SBATCH directives, Lmod opt-in, module loads, and commands to run the test.py script.<br />
 3. Include a mail notification so that you know the script completed successfully.<br />
